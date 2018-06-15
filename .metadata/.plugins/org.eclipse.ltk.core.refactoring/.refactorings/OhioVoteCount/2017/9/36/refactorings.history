@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;votecountMR.CountReduce.java&apos; to &apos;CountReducer.java&apos;&#x0D;&#x0A;- Original project: &apos;OhioVoteCount&apos;&#x0D;&#x0A;- Original element: &apos;votecountMR.CountReduce.java&apos;&#x0D;&#x0A;- Renamed element: &apos;votecountMR.CountReducer.java&apos;" description="Rename compilation unit &apos;CountReduce.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;votecountMR{CountReduce.java" name="CountReducer.java" references="false" stamp="1504793299546" version="1.0"/>
+</session>

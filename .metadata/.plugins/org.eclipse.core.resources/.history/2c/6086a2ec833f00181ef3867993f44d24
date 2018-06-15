@@ -1,0 +1,99 @@
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+public class quiz {
+
+	public static void main(String[] args) {
+		   JFrame frame = new JFrame("My First GUI");
+	       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	       frame.setSize(400,400);
+			/*      
+		       JMenuBar mb = new JMenuBar();
+		       JMenu m1 = new JMenu("File");
+		       JMenu m2 = new JMenu("Help");
+		       mb.add(m1);
+		       mb.add(m2);
+		       JMenuItem m11 = new JMenuItem("Open");
+		       JMenuItem m12 = new JMenuItem("Save as");
+		       m1.add(m11);
+		       m1.add(m12);
+	       	*/
+	       //Creating panel at bottom and adding components
+	       
+	       
+	       JPanel panel = new JPanel();
+	       
+	       JLabel label = new JLabel("Q1: Which one is primitive datatype?");
+	       	//JTextField text = new JTextField(10);
+	       
+	       JButton next = new JButton("Next");
+	       		//frame.getContentPane().add(send); // Adds Button to content pane of frame	       
+	       		//JButton reset = new JButton("Reset");
+	       		//frame.getContentPane().add(reset);
+	       
+	       //JOptionPane op = new JOptionPane();
+	       
+	       
+	       JRadioButton birdButton = new JRadioButton();
+	       birdButton.setMnemonic(KeyEvent.VK_B);
+	       //birdButton.setActionCommand(birdString);
+	       //birdButton.setSelected(true);
+
+	       JRadioButton catButton = new JRadioButton();
+	       catButton.setMnemonic(KeyEvent.VK_C);
+	       //catButton.setActionCommand(catString);
+
+	       JRadioButton dogButton = new JRadioButton();
+	       dogButton.setMnemonic(KeyEvent.VK_D);
+	       //dogButton.setActionCommand(dogString);
+
+	       JRadioButton rabbitButton = new JRadioButton();
+	       rabbitButton.setMnemonic(KeyEvent.VK_R);
+	      // rabbitButton.setActionCommand(rabbitString);
+
+	       JRadioButton pigButton = new JRadioButton();
+	       pigButton.setMnemonic(KeyEvent.VK_P);
+	       //pigButton.setActionCommand(pigString);
+
+	       //Group the radio buttons.
+	       ButtonGroup group = new ButtonGroup();
+	       group.add(birdButton);
+	       group.add(catButton);
+	       group.add(dogButton);
+	       group.add(rabbitButton);
+	       group.add(pigButton);
+
+	       //Register a listener for the radio buttons.
+	       // birdButton.addActionListener(this);
+	       //catButton.addActionListener(this);
+	       //dogButton.addActionListener(this);
+	       //rabbitButton.addActionListener(this);
+	       //pigButton.addActionListener(this);
+	       
+	       
+	       
+	       frame.getContentPane().add(BorderLayout.CENTER, label);
+	       frame.getContentPane().add(BorderLayout.SOUTH, next);
+	       //frame.getContentPane().add(BorderLayout.CENTER, group);
+	       
+	       //frame.getContentPane().add(BorderLayout.CENTER,ta);
+	       //frame.getContentPane().add(BorderLayout.NORTH, mb);
+	       
+	       frame.setVisible(true);
+	       
+	       
+	       
+	       panel.setVisible(true); 
+
+	}
+
+}

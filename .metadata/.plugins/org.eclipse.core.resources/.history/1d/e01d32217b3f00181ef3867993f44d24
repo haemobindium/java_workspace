@@ -1,0 +1,69 @@
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class quiz {
+
+	public static void main(String[] args) {
+		   JFrame frame = new JFrame("My First GUI");
+	       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	       frame.setSize(400,400);
+			/*      
+		       JMenuBar mb = new JMenuBar();
+		       JMenu m1 = new JMenu("File");
+		       JMenu m2 = new JMenu("Help");
+		       mb.add(m1);
+		       mb.add(m2);
+		       JMenuItem m11 = new JMenuItem("Open");
+		       JMenuItem m12 = new JMenuItem("Save as");
+		       m1.add(m11);
+		       m1.add(m12);
+	       	*/
+	       //Creating panel at bottom and adding components
+	       
+	       
+	       JPanel panel = new JPanel();
+	       
+	       JLabel label = new JLabel("Q1: Which one is primitive datatype?");
+	       	//JTextField text = new JTextField(10);
+	       
+	       JButton next = new JButton("Next");
+	       		//frame.getContentPane().add(send); // Adds Button to content pane of frame	       
+	       		//JButton reset = new JButton("Reset");
+	       		//frame.getContentPane().add(reset);
+	       
+	       JOptionPane op = new JOptionPane();
+	       JLabel op1 = new JLabel("int");
+	       JLabel op2 = new JLabel("String");
+	       JLabel op3 = new JLabel("Float");
+	       JLabel op4 = new JLabel("int");
+	       
+	       panel.add(label);	//flow layout for panel
+	       panel.add(op1);
+	       panel.add(op2);
+	       panel.add(op3);
+	       panel.add(op4);
+	       panel.add(next);
+	       		//panel.add(reset);
+	       
+	       //text area at the center
+	     //  JTextArea ta = new JTextArea();
+	       
+	       frame.getContentPane().add(BorderLayout.SOUTH, panel);
+	       //frame.getContentPane().add(BorderLayout.CENTER,ta);
+	       //frame.getContentPane().add(BorderLayout.NORTH, mb);
+	       
+	       frame.setVisible(true);
+	       
+	       
+	       
+	       panel.setVisible(true); 
+
+	}
+
+}
